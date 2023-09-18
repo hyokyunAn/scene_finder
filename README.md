@@ -1,6 +1,8 @@
 ## Scene_Finder
 ![scene_finder_example](https://github.com/hyokyunAn/scene_finder/assets/60477870/631f57f6-5719-4545-880c-56ccd544dfc3)
 
+example video: (https://www.youtube.com/watch?v=z4K2F_OALPQ&t=40s)
+example prompt: A hat shouting "Gryffindor!" on a girl`s head.
 
 ## How It Works?
 
