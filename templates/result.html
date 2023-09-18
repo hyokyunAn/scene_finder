@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결과 페이지</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://public-vcrdata.s3.ap-northeast-2.amazonaws.com/blog/images/1626345957009.jpg');
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150vh;
+        }
+
+        .image-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .image-box img {
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        .image-container {
+            display: inline-block;
+            margin: 10px;
+            text-align: center; /* 텍스트를 중앙 정렬 */
+        }
+
+        .image-container img {
+            max-width: 500px; /* 원하는 너비로 조절 */
+            max-height: 300px; /* 원하는 높이로 조절 */
+        }
+
+        /* 검색 박스 스타일 */
+        form {
+            margin-bottom: 50px;  /* 검색 박스와 아래 내용 사이의 간격을 조절 */
+        }
+
+        /* 텍스트 입력 박스 스타일 */
+        form input[type="text"] {
+            font-size: 18px;  /* 텍스트 크기 조절 */
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <form action="/reprocess_data" method="post">
+        <!-- 텍스트 박스 -->
+        <input type="text" id="reTextInput" name="reTextData" placeholder="Enter a description of the scene.">
+        <!-- 검색 버튼 -->
+        <input type="submit" value="Search">
+    </form>
+    
+        <div class="image-box">
+        {% for image, text in image_text_pairs %}
+            <div class="image-container">
+                <img src="{{ image }}" alt="Scene Image">
+                <p>{{ text }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    
+</body>
+
+
+
+</html>
