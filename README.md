@@ -6,7 +6,7 @@
 - **Example Prompt:** A hat shouting "Gryffindor!" on a girl's head.
 
 [Demo](http://34.95.2.121:5000/)
-
+(Demo sometimes works badly due to status of hosting server or API server (like OpenAI GPT)
 
 ## How It Works?
 
