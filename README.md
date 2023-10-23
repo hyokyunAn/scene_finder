@@ -5,7 +5,7 @@
 - **Example Video:** [Watch here](https://www.youtube.com/watch?v=z4K2F_OALPQ&t=40s)
 - **Example Prompt:** A hat shouting "Gryffindor!" on a girl's head.
 
-**Demo**(http://34.95.2.121:5000/)
+[Demo](http://34.95.2.121:5000/)
 
 
 ## How It Works?
