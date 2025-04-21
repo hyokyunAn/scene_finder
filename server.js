@@ -9,14 +9,11 @@ app.listen(8080, function(){
 
 });
 
-app.get('/pet', function(req, res){
-    res.send('펫쇼핑 페이지');
+app.get('/page1', function(req, res){
+    res.send('page1');
 
 });
 
-app.get('/beauty-', function(req, res){
-    res.send('뷰티')
-});
 
 app.get('/sound/:name', (req, res) => {
     const { name } = req.params
